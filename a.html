@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // s=[1,2,3,4,45,6];
+        // sum=0;
+        // for(i=0;i<s.length;i++)
+        // {
+        //     sum=sum+s[i];
+        // }
+        // document.write("addition of number ="+sum)
+        
+        
+        //WAP to print string array as an input 
+        //from user and print that array
+        let size=parseInt(prompt("Enter the size of an array"));
+        let a=new Array(size);
+
+        for(let i=0;i<a.length;i++)
+        {
+            a[i]=prompt("Enter String elements");
+        }
+
+        for(let j=0;j<a.length;j++)
+        {
+            document.write(a[j]+"<br>");
+        }
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        ///find even no from given array using filter()
+        const x=[56,5,12,8,9,23,4];
+        //filter() => filter method filters data on the basis of given predicate in the form of arrow function
+        //isArray() => isArray() method checks whether given variable is an array or not
+       const y= x.filter( (n)=> n%2==0);
+       document.write(y);
+       document.write("<br> y is an array ="+Array.isArray(y));//true
+    </script>
+</body>
+</html>

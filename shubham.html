@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //call back function 
+    //     const a=[2,3,4,5,6,7,8,,9,11,12,13];
+    //    const p= a.find(get);
+    //    function get (b)
+    //    {
+    //     return b>5;
+    //    }
+    //    document.write("even no is ="+p);
+
+//findindex
+    const a=[2,3,4,5,6,7,8,,9,11,12,13];
+       const p= a.findIndex(findnumber);
+       function findnumber(b)
+       {
+        return b==11;
+       }
+       document.write(+p);
+
+       //filter 
+       const color=["red","black","green","blue","yellow"];
+      const arr= color.filter((s) =>s.startsWith("b"));
+      document.write("<br>"+arr);
+
+       //filter
+      let r=["shubham","swapnil","shushant","pratik","pranav","Amarjit"];
+     let x= r.filter((a) =>a.startsWith("s"));
+     document.write("<br>"+x);
+      //reduce method
+     const product=[
+            {pname:"pen",price:10,qty:3},
+            {pname:"eraser",price:5,qty:4},
+            {pname:"pencil",price:8,qty:2}
+        ];
+        const k=product.reduce(total,0);
+        function total(accumulator,p1)
+        {
+            return p1.price*p1.qty+accumulator
+        }
+        document.write("<br>"+k);
+
+    </script>
+</body>
+</html>

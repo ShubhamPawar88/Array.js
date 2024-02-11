@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x=[4,"hello",45,12.5,true,2]   
+        document.write("<br>original array :"+x);
+        x[1]="shubham";//updating element on frist index
+        document.write("<br>After updating element array :"+x);
+        //adding element at the end of the array
+        x.push("welcome");
+        document.write("<br>After Adding element at the end of the array :"+x);
+        //adding element at frist position of the array
+        x.unshift(100);
+        document.write("<br>After adding element at the start array :"+x);
+        //adding element at middal position of array
+        //here,2 is the index postion on whcih we want add an element "js"
+          //the second argument is 0 which indicates it will not delete the element which is already positioned on index 2
+        x.splice(4,0,"javascript");
+        // x.splice(4,0,"javascript","React");
+        document.write("<br>After adding element at the middal array :"+x);
+
+
+     </script>
+</body>
+</html>

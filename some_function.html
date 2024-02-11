@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         const perArr=[
+            {name:"prasad",age:25},
+            {name:"Dipak",age:24},
+            {name:"shwetam",age:21}
+        ];
+        //some function checks the each element of an array and return true when ANY SINGLE element/object passes the given test cases in callback function
+        //every function checks the each element of an array and return true when ALL elements/objects passes the given test cases in callback function
+        const res1 =perArr.some(isEligible);//some is 1 object check then output true
+        const res2 =perArr.every(isEligible);//every is start to end check object one object are false then output is false
+        //call back
+        function isEligible(person1)
+        {
+            return person1.age>=22;
+        }
+        document.write("<br> some function returns="+res1)
+        document.write("<br> every function returns="+res2)
+        
+    </script>
+</body>
+</html>

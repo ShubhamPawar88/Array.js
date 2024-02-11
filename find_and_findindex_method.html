@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //find function finds the element from the array which passes given test cases in callback function
+         //find function returns the whole object whereas
+         //findIndex function returns the index of the given object
+        const a=[3,15,6,12,4,17,8,19];
+        //in below case get is a callback function.
+         //So callback function is a function that can be passed as a parameter to the another function so that it can be executed in that other functio
+        const res=a.find(get);
+        function get(num)
+        {
+            return num>10;
+        }
+        document.write(res);
+
+       //2.creating array of objects
+        const perArr=[
+            {name:"ram",age:32},
+            {name:"sham",age:34},
+            {name:"gita",age:22}
+        ];
+         //const res1=perArr.fimd(findperson)
+        const res1=perArr.findIndex(findperson)
+        //the below function finds whether the person name is sham or not
+        function findperson(p)
+        {
+            return p.name=="gita";
+        }
+        document.write("<br>"+JSON.stringify(res1));
+    </script>
+</body>
+</html>

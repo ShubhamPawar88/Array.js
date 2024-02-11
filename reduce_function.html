@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const a=[5,6,7,4,3,2,9];
+       //1.reduce =>The reduce() method executes a callback function for each array element. The reduce() method returns a single value: 
+
+        //here 0 is the initial value of accumulator,optional value...if we don't provide 0 then accumulator will be initialized with first val of an array and first iteration will be skipped
+        //accumulator is used to keep track of the value which will be return at the end of the function
+
+        let n=a.reduce(total,0);
+        function total(accumulator,v)
+        {
+            return accumulator+v
+        }
+        document.write("<br> the sum of all the array element="+n);
+        document.write("<br> type of n="+typeof(n));//number
+    </script>
+</body>
+</html>

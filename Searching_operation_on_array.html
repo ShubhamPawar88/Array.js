@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=[3,7,22,5,17,25,22,1];
+        let search=25;
+        let found=0;
+        document.write("original array : "+a);
+        for(i=0;i<a.length;i++)
+        {
+            if(a[i]==search)
+            {
+                document.write("<br> element found at index position :"+i);
+                found=1;
+                break;
+
+            }
+        }
+        if(found==0)
+        {
+            document.write("<br> not found");
+        }
+    </script>
+</body>
+</html>

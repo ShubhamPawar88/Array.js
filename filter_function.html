@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //WAP to findout the elements of an array having length equals to 3
+
+        let data=["shubham","dipak","prasad","sushant","shwetam","ram","jay","run"];
+        document.write("original array data = "+data);
+        //In below code, (p) => p.length == 3 ) is called as "arrow function"
+         //filter function is used to filter an array based on given predicate/condition
+        //here,in below case filter function takes one one value at a time from array "data" and store it into variable "p"
+        document.write("<br>after filter data = "+data.filter((p)=>p.length==3));
+
+
+
+    </script>
+</body>
+</html>

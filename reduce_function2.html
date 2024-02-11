@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         const product=[
+            {pname:"pen",price:10,qty:3},
+            {pname:"eraser",price:5,qty:4},
+            {pname:"pencil",price:8,qty:2}
+        ];
+        //this below method reduce calls on product array over 3 no of times because,product is having 3 objects so every time this reduct passes one by object to "totalProductSale" callback function, then this totalProductSale function copy that object into v1 object then this v1 object is used in totalProductSale function.here value of accumulator will get update every time whenever we call that function but the final value of accumulator will be store in variable acc
+
+      let acc=  product.reduce(totalproductsale,0)
+        function totalproductsale(accumulator,v1)
+        {
+            return v1.price*v1.qty+accumulator;
+        }
+        document.write("total product gain="+acc);
+        
+    </script>
+</body>
+</html>

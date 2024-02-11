@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let x=[4,"hello",45,12.5,true,2]   
+        document.write("<br>original array :"+x);
+        //removing an element present at end of the array
+        x.pop();
+        document.write("<br>after pop, array x="+x);
+        //removing an element present at start of the array
+        x.shift();
+        document.write("<br>after shift, array x="+x);
+        //removing element starting from index 1to 2(3-1)
+        // x = x.slice(2, 4);
+         document.write("<br>after slice, array x=" + x.slice(1,3));
+
+
+
+    </script>
+</body>
+</html>

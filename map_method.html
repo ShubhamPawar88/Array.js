@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const product=[
+            {pname:"pen",price:10,qut:3},
+            {pname:"eraser",price:5,qut:4},
+            {pname:"pencil",price:8,qut:2}
+        ];
+           //  difference between filter and map() method is
+            //filter method returns WHOLE OBJECT which satiesfies given predicate
+            //whereas map method returns specified SINGLE PROPERTY of that each object which is returned by the filter method
+        let arr=product.filter((p)=>p.price>5).map((pr)=>pr.price);
+        document.write(JSON.stringify(arr));
+    </script>
+</body>
+</html>
